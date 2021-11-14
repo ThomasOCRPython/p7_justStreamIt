@@ -8,7 +8,9 @@
 
 * <span style="color:#696969">Editeur de code
 * <span style="color:#696969">Pyhton 3
-* <span style="color:#696969">Environnement virtuel de Python 3
+* <span style="color:#696969">javascript
+* <span style="color:#696969">html
+* <span style="color:#696969">css
 * <span style="color:#696969">Shell,Terminal ou Git Bash
 
 ## <span style="color:#007ee6"> Installation </span>
