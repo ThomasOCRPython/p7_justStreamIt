@@ -29,44 +29,6 @@ function carousel(containerCarousel,indicator,film,leftArrow,rightArrow){
     }
   
   });
-
-  /* -------------------------------------------------------------------------- */
-/*                                 pagination                                 */
-/* -------------------------------------------------------------------------- */
-
-  // const nbPaginations = Math.ceil(films.length / 4);
-
-  // for(let i = 0; i < nbPaginations; i++){
-  //   const indicators = document.createElement('button');
-
-  //   if(i === 0){
-  //     indicator.classList.add('active');
-  //   }
-
-  //   document.querySelector(indicator).appendChild(indicators);
-  //   console.log(document.querySelector(indicator),'tttttttttttttttttttttttt')
-  //   indicator.addEventListener('click', (e) => {
-  //     thread.scrollLeft = i * thread.offsetWidth;
-
-  //     document.querySelector(indicator +'.active').classList.remove('active');
-  //     e.target.classList.add('active');
-  //   }); 
-  //   }
-
-  // films.forEach((film) => {
-  //   film.addEventListener('mouseenter', (e) => {
-  //     const element = e.currentTarget;
-  //     setTimeout(() => {
-  //       films.forEach(film => film.classList.remove('hover'));
-  //       element.classList.add('hover');
-  //     }, 300);
-  //   });
-  // });
-
-  // thread.addEventListener('mouseleave', () => {
-  //   films.forEach(film => film.classList.remove('hover'));
-  // });
-
     
 
 }
@@ -104,55 +66,6 @@ fetchMovieJSON().then(movie => {
 		})
 });
 
-
-/* -------------------------------------------------------------------------- */
-/*                                    Import Image                            */
-/* -------------------------------------------------------------------------- */
-
-
-  
-// async function fetchMovies() {
-//   const [moviesPage, categoriesPage] = await Promise.all([
-//     fetch('http://localhost:8000/api/v1/titles/?imdb_score_min=9'),
-//     fetch('http://localhost:8000/api/v1/titles/?imdb_score_min=9&page=2')
-//   ]);
-
-//   const movies = await moviesPage.json();
-//   const categories = await categoriesPage.json();
-  
-//   return [movies, categories];
-// };
-
-// fetchMovies().then(([movies, categories]) => {
-//   movies;     // fetched movies
-//   categories; // fetched categories
-  
-//   let imageSuite=categories.results;
-//   let imageTest=movies.results;
-//   let cmt=0;
-  
-
-//   imageTest.forEach(i => {
-//     let mod = document.getElementsByClassName('film')[cmt];
-//     cmt +=1
-//     let image = document.getElementsByClassName(`img${cmt}`)[0];
-//     image.setAttribute('src',`${i.image_url}`);
-//     mod.addEventListener("click",()=>{createModal(i.id)});
-    
-//   });
-  
-//   imageSuite.forEach(i => {
-//     let mod = document.getElementsByClassName('film')[cmt];
-//     cmt +=1
-//     let image = document.getElementsByClassName(`img${cmt}`)[0]
-//     image.setAttribute('src',`${i.image_url}`)
-//     mod.addEventListener("click",()=>{createModal(i.id)});
-  
-//   })
-   
-// }).catch(error => {
-//   //request failed
-// });
 
 /* -------------------------------------------------------------------------- */
 /*                                    Modal                                   */
