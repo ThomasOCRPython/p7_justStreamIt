@@ -6,31 +6,28 @@
 function carousel(containerCarousel,indicator,film,leftArrow,rightArrow){
 
   const thread = document.querySelector(containerCarousel);
-  const films = document.querySelectorAll(film);
+  // const films = document.querySelectorAll(film);
 
   const arrowLeft = document.getElementById(leftArrow);
   const arrowRight = document.getElementById(rightArrow);
 
   arrowRight.addEventListener('click', () => {
     thread.scrollLeft += thread.offsetWidth;
-    const  indicatorActive  =  document.querySelector(indicator +'.active') ;
-    if(indicatorActive.nextSibling) {
-      indicatorActive.nextSibling.classList.add('active') ;
-      indicatorActive.classList.remove('active') ;
-    }
+    // const  indicatorActive  =  document.querySelector(indicator +'.active') ;
+    // if(indicatorActive.nextSibling) {
+    //   indicatorActive.nextSibling.classList.add('active') ;
+    //   indicatorActive.classList.remove('active') ;
+    // }
   });
 
   arrowLeft.addEventListener('click', () => {
     thread.scrollLeft -= thread.offsetWidth;
-    const indicatorActive = document.querySelector(indicator +'.active');
-    if(indicatorActive.previousSibling){
-      indicatorActive.previousSibling.classList.add('active');
-      indicatorActive.classList.remove('active');
-    }
-  
+    // const indicatorActive = document.querySelector(indicator +'.active');
+    // if(indicatorActive.previousSibling){
+    //   indicatorActive.previousSibling.classList.add('active');
+    //   indicatorActive.classList.remove('active');
+    // } 
   });
-    
-
 }
 
 
@@ -75,23 +72,16 @@ function createModal(id) {
   let modal = document.getElementById("myModal");
   let span = document.getElementsByClassName("close")[0];
   modal.style.display = "block";
-  test=id
-  
-
-  fetch("http://localhost:8000/api/v1/titles/"+test)
-
+  // test=id
+  fetch("http://localhost:8000/api/v1/titles/"+id)
   .then(function(res) {
       if (res.ok) {
-        
         return res.json();
       }
   })
     .then(function(data) {
-      
-      
       let modal_img = document.getElementsByClassName("modal__img")[0];
       modal_img.innerHTML = "<p><img src='" +  data.image_url + "'></p>";
-      
       let modal_title = document.getElementsByClassName("title")[1];
       modal_title.innerHTML = `Title :  ${data.title}`;
       let modal_genre = document.getElementsByClassName("genre")[0];
@@ -114,21 +104,14 @@ function createModal(id) {
       modal_result_box_office.innerHTML = `Box Office : ${data.worldwide_gross_income}`;
       let modal_summary = document.getElementsByClassName("summary")[0];
       modal_summary.innerHTML = `Summary :<br/>  ${data.description}`;
-
-      
       span.onclick = function() {
       modal.style.display = "none";
-
-      
-      
   }
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
-        
         }
       }
-  
 })
   .catch(function(error) {
     console.error('Error:', error);
@@ -163,7 +146,6 @@ function factorisationAsync(url1,url2,img,film){
     let imageTest=movies.results;
     let cmt=0;
     
-
     imageTest.forEach(i => {
       let mod = document.getElementsByClassName(`${film}`)[cmt];
       cmt +=1
@@ -179,7 +161,6 @@ function factorisationAsync(url1,url2,img,film){
       let image = document.getElementsByClassName(`${img+cmt}`)[0]
       image.setAttribute('src',`${i.image_url}`)
       mod.addEventListener("click",()=>{createModal(i.id)});
-      
     
     })
     

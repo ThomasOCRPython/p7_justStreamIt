@@ -241,14 +241,11 @@ header .submenu {
 .best-movies .container-carousel .carousel {
     display: flex;
     flex-wrap: nowrap;
-    
-    
 }
 
 .horror-movies .container-carousel2 .carousel2 .h_film,
 .action-movies .container-carousel3 .carousel3 .a_film,
 .best-movies .container-carousel .carousel .film {
-    
     display:inline-block;
     margin: 0 4.75em;
     min-width: 15%;
