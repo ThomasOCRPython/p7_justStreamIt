@@ -48,6 +48,31 @@ header nav a.active{
     color: #fff;
 }
 
+header li {
+    display: inline-block; 
+    vertical-align: top;  
+    position: relative; 
+} 
+
+header li a {
+    display: block;
+}
+
+header li:hover .submenu {
+    display: block; 
+}
+
+header .submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    padding-top: 2px;
+
+}
+
+.submenu li {
+    display: block;
+}
  /* -------------------------------------------------------------------------- */
  /*                                 Best movie                                 */
  /* -------------------------------------------------------------------------- */

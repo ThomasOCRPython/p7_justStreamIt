@@ -31,10 +31,18 @@
       <div class="container">
         <h2 class="logo">JustStreamIt</h2>
         <nav>
-          <a class="active" href="#"
-            ><i class="fa fa-home" aria-hidden="true"></i> Home</a
-          >
-          <a href="#"><i class="fa fa-film" aria-hidden="true"></i> Category</a>
+          <ul>
+            <li><a class="active" href="#"
+              ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+            ></li>
+            <li><a href="#"><i class="fa fa-film" aria-hidden="true"></i> Category</a>
+            <ul class="submenu">
+              <li><a href="#ancrage1">Best movies</a></li>
+              <li><a href="#ancrage2">Horror movies</a></li>
+              <li><a href="#ancrage3">Action movies</a></li>
+            </ul>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -43,7 +51,7 @@
       <!-- ----------------------------------------------------------------------- -->
       <!--                                 entete                                  -->
       <!-- ----------------------------------------------------------------------- -->
-      <div class="best-film">
+      <div  class="best-film">
         <div id ="background" class="container">
           <!-- <img class ="img-dynamic" alt=""> -->
           <h3 id="title" class="title"></h3>
@@ -56,7 +64,7 @@
       <!-- ----------------------------------------------------------------------- -->
       <!--                                 slider                                  -->
       <!-- ----------------------------------------------------------------------- -->
-      <div class="best-movies container">
+      <div id="ancrage1" class="best-movies container">
         <div class="container-title-controls">
           <h3>Meilleurs films</h3>
           <div class="indicators"></div>
@@ -95,7 +103,7 @@
 
 
       </div>
-      <div class="horror-movies container">
+      <div id="ancrage2" class="horror-movies container">
         <div class="container-title-controls">
           <h3>Horror films</h3>
           <div class="indicators1"></div>
@@ -134,7 +142,7 @@
 
 
       </div>
-      <div class="action-movies container">
+      <div id="ancrage3" class="action-movies container">
         <div class="container-title-controls">
           <h3>Action films</h3>
           <div class="indicators2"></div>

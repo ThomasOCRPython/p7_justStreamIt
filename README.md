@@ -15,9 +15,9 @@
 
 ## <span style="color:#007ee6"> Installation </span>
 
-1. <span style="color:#696969">Télécharger le dossier zip de l'API depuis Git Hub (<https://github.com/ThomasOCRPython/P1-scraping>)et suiver les instructions d'installation.</span>
+1. <span style="color:#696969">Télécharger le dossier zip de l'API depuis Git Hub (<https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR>)et suiver les instructions d'installation.</span>
 
-1. <span style="color:#696969">Télécharger le dossier zip depuis Git Hub (<https://github.com/ThomasOCRPython/P1-scraping>) ou taper la commande: `git clone git@github.com:ThomasOCRPython/P1-scraping.git`.</span>
+1. <span style="color:#696969">Télécharger le dossier zip depuis Git Hub (<https://github.com/ThomasOCRPython/p7_justStreamIt>) ou taper la commande: `git clone git@github.com:ThomasOCRPython/p7_justStreamIt.git`.</span>
 
 ## <span style="color:#007ee6"> Démarrage </span>
 
